@@ -34,7 +34,6 @@ The Trip Scraper project is designed to gather detailed information about hotels
 ## Features
 - Scrapes hotel data from multiple locations.
 - Stores data in a PostgreSQL database using SQLAlchemy.
-- Handles dynamic content loading via AJAX.
 - Extracts images and saves them locally.
 - Configurable settings for scraping and database connection
 
