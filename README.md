@@ -74,7 +74,7 @@ trip_scraper/
 ``` bash
 git clone https://github.com/samayunPathan/scrapy-assignment-w3.git
 ```
-Go to directory 
+  Go to directory 
 ``` bash
 cd scrapy-assignment-w3
 ```
@@ -110,7 +110,9 @@ pip install -r requirements.txt
 ## Database Setup
 Create postgresql database in your system . Also create .env file in your project directory and place DATABASE_URI. When project run automatically create table in database. 
 
-`DATABASE_URI = 'postgresql://username:password@localhost:port/database_name'`
+```bash 
+DATABASE_URI = "postgresql://username:password@localhost:port/database_name"
+```
 
 
 ## Running the Scraper
