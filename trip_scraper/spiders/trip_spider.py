@@ -39,19 +39,18 @@ class TripSpider(scrapy.Spider):
 
         try:
             selected_categories = random.sample(categories, min(3, len(categories)))
+            self.logger.info(f"Selected categories: {selected_categories}")
         except ValueError as e:
             self.logger.error(f"Error sampling categories: {str(e)}")
             selected_categories = categories
 
         for category_name, json_key in selected_categories:
             if category_name in ['inboundCities', 'outboundCities']:
-                city = next(iter(json_data.get(json_key, [])), None)
-                if city:
+                for city in json_data.get(json_key, []):
                     city_id = city.get('id')
-                    hotel = next(iter(city.get('recommendHotels', [])), None)
-                    if hotel:
+                    for hotel in city.get('recommendHotels', []):
                         hotel_data = self.extract_hotel_data(hotel)
-                        hotel_data['city_id'] = city_id
+                        hotel_data['city_id'] = city_id  # Attach city id to each hotel
                         yield hotel_data
             else:
                 for hotel in json_data.get(json_key, []):
