@@ -81,23 +81,11 @@ cd scrapy-assignment-w3
 ```
 
 2. Create and activate a virtual environment:
-- macOS/Linux:
-
-``` bash 
-python3 -m venv env
+```bash
+python3 -m venv venv # On Windows use `python -m venv venv`
 ```
-
-``` bash 
-source env/bin/activate
-```
-
-- Windows
-``` bash 
-python -m venv env
-```
-
-``` bash
-source env/scripts/activate
+```bash
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 ```
 
 
