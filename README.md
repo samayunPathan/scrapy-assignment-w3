@@ -73,11 +73,11 @@ trip_scraper/
 1. Clone the repository:
 
 ``` bash
-git clone https://github.com/samayunPathan/Scrapy-assignment.git
+git clone https://github.com/samayunPathan/scrapy-assignment-w3.git
 ```
 
 ``` bash
-cd trip_scraper
+cd scrapy-assignment-w3
 ```
 
 2. Create and activate a virtual environment:
