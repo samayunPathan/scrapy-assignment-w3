@@ -101,7 +101,7 @@ pip install -r requirements.txt
 Create postgresql database in your system . Also create .env file in your project directory and place DATABASE_URI. When project run automatically create table in database. 
 
 ```bash 
-DATABASE_URI = "postgresql://username:password@localhost:port/database_name"
+DATABASE_URL = "postgresql://username:password@localhost:port/database_name"
 ```
 
 
