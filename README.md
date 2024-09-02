@@ -2,7 +2,7 @@
 # Trip Scraper
 
 
-This Trip Scraper project involves building a Scrapy web crawler that fetches location data from an AJAX API, selects a random place, and scrapes hotel details like title, photos, rating, latitude, longitude, room type, price, and city. The scraped data is saved in a PostgreSQL database using SQLAlchemy.
+The Trip Scraper project involves building a Scrapy web crawler to extract data from Trip.com. The crawler randomly selects three out of five headers—Popular Hotels in the United Kingdom, Popular Hotels Worldwide, Popular Cities in the United Kingdom, Popular Cities Worldwide, and Top Luxury 5-star Hotels. It scrapes hotel details such as the title, photos, rating, latitude, longitude, room type, price, and city. The scraped data is then stored in a PostgreSQL database using SQLAlchemy.
 
 
 
